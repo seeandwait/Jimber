@@ -60,7 +60,7 @@ export default {
    },
     created() {    
     this.token = localStorage.getItem("Token")
-     this.socket = io('http://localhost:3000', {
+     this.socket = io('http://167.172.34.174:3000', {
         query: {
             bearerToken: this.token
         }})
